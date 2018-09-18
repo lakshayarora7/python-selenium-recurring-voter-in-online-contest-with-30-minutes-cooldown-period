@@ -12,3 +12,10 @@ A single user can re-vote after 30 minutes. In order to incorporate
 slow networks, the script waits for 31 minutes before running the function again.
 The script maintains a counter of how many votes have been cast since the script
 has been commenced. Also gives the timestamp for the next vote.
+
+
+If you need to login to Facebook first, there's a commented out code block in the script to do that. Uncomment the block, fill in your credentials, and give it a spin.
+
+If you need to add another button click in your sequence, a dummy commented out code block is at your disposal. Fill the button selector there and try the script. In order to get the CSS selector for your new button, right click on the button on the web page > Inspect > Right click on the tag which refers to the button > Copy > Copy Selector > paste it in the code.
+
+For resolving selenium error "shader_disk_cache", refer to https://stackoverflow.com/questions/37317427/unable-to-move-the-cache-error-in-selenium-webdriver".
