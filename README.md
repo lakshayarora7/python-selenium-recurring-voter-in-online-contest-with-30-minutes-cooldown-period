@@ -1,25 +1,27 @@
 # python-selenium-recurring-voter-in-online-contest-with-30-minutes-cooldown-period
 
-Script to cast vote for a participant in a Cute Baby contest on www.cutebaby.in, every 30 minutes using Python and Selenium.
+PURPOSE: Script to cast vote for a participant in a Cute Baby contest on www.cutebaby.in, every 30 minutes using Python and Selenium.
 
-Authors: Nalini Aggarwal & Lakshay Arora
+SITUATION: A friend of ours had a distant relative, who had entered their baby in a contest on www.cutebaby.in. Our friend was trying to register as many votes from his side. To register a vote, he went to the URL of the participant baby, clicked on 2 buttons (occuring over a span of 1-2 minutes timed dialog boxres) before finally clicking on the actual VOTE button. Also, once a vote had been recorded, he could vote after a period of 30 minutes. We automated this for him using this script.
 
-Pre-requisite to run the script: Selenium package. To install selenium driver for Python, enter in command line:
+AUTHORS: Nalini Aggarwal & Lakshay Arora
+
+PRE-REQUISITE TO RUN THE SCRIPT: Selenium package. To install selenium driver for Python, enter in command line:
 $ pip install selenium
 pip is Python's package manager. For more information on pip, refer to "https://www.djangospin.com/python-installing-external-modules-using-pip/".
 
-Inputs to script:
+INPUTS TO SCRIPT:
 1. URL of the participant to cast vote on.
 2. CSS selectors of all the button that need to be clicked to cast the vote.
 
-To run the script, enter in command line:
+TO RUN THE SCRIPT, enter in command line:
 $ python clicker.py
 
-A single user can re-vote after 30 minutes. In order to incorporate slow networks, the script waits at some points to ensure that the page has loaded properly before clicking on the buttons. The script maintains a counter of how many votes have been cast since the script has been commenced. Also gives the timestamp for the next vote.
+INFO: The script maintains a counter of how many votes have been cast since the script has been commenced. Also gives the timestamp for the next vote.
 
-If you need to login to Facebook first, there's a commented out code block in the script to do that. Uncomment the block, fill in your credentials, and give it a spin.
+IF YOU NEED TO LOGIN TO FACEBOOK FIRST, there's a commented out code block in the script to do that. Uncomment the block, fill in your credentials, and take it out for a spin.
 
-If you need to add another button click in your sequence, follow the procedure mentioned in the script. Basically:
+IF YOU NEED TO ADD ANOTHER BUTTON CLICK in your sequence, follow the procedure mentioned in the script. Basically:
 1. Get CSS selector for your new button from the webpage (right click on the button on the web page > Inspect > Right click on 
 the tag which refers to #the button > Copy > Copy Selector > paste its value in identifier 'buttonSelector4' in the code).
 2. Pass the 'buttonSelector4' in the function call in the end of the script.
@@ -28,7 +30,6 @@ the tag which refers to #the button > Copy > Copy Selector > paste its value in 
 5. Enter sleep time for page or popup to occur.
 6. Test the script.
 
-
-For resolving selenium error "shader_disk_cache", refer to https://stackoverflow.com/questions/37317427/unable-to-move-the-cache-error-in-selenium-webdriver".
+FOR RESOLVING SELENIUM ERROR "shader_disk_cache", refer to https://stackoverflow.com/questions/37317427/unable-to-move-the-cache-error-in-selenium-webdriver".
 
 We hope you find the script of utility. Reach out to us at naliniaggarwal1@gmail.com or lakshayarora7@gmail.com for any questions.
