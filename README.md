@@ -2,7 +2,7 @@
 
 <b>PURPOSE</b>: Script to cast vote for a participant in a Cute Baby contest on www.cutebaby.in, every 30 minutes using Python and Selenium.
 
-<b>SITUATION</b>: A friend of ours had a distant relative, who had entered their baby in a contest on www.cutebaby.in. Our friend was trying to register as many votes from his side. To register a vote, he went to the URL of the participant baby, clicked on 2 buttons (occuring over a span of 1-2 minutes timed dialog boxres) before finally clicking on the actual VOTE button. Also, once a vote had been recorded, he could vote after a period of 30 minutes. We automated this for him using this script.
+<b>SITUATION</b>: A friend of ours had a distant relative, who had entered their baby in a contest on www.cutebaby.in. Our friend was trying to register as many votes from his side for the baby. To register a vote, he went to the URL of the participant baby, clicked on 2 buttons (occurring over a span of 1-2 minutes timed dialog boxes) before finally clicking on the actual VOTE button. Also, once a vote had been recorded, he could vote after a period of 30 minutes. We automated this for him using this script.
 
 <b>AUTHORS</b>: Nalini Aggarwal & Lakshay Arora
 
